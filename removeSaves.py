@@ -98,36 +98,25 @@ def show_progress(val):
     ''' Show the progress of removing posts. '''
     if val < 0.1:
         sys.stdout.write("\r░░░░░░░░░░")
-        sys.stdout.flush()
     elif val < 0.2:
         sys.stdout.write("\r▓░░░░░░░░░")
-        sys.stdout.flush()
     elif val < 0.3:
         sys.stdout.write("\r▓▓░░░░░░░░")
-        sys.stdout.flush()
     elif val < 0.4:
         sys.stdout.write("\r▓▓▓░░░░░░░")
-        sys.stdout.flush()
     elif val < 0.5:
         sys.stdout.write("\r▓▓▓▓░░░░░░")
-        sys.stdout.flush()
     elif val < 0.6:
         sys.stdout.write("\r▓▓▓▓▓░░░░░")
-        sys.stdout.flush()
     elif val < 0.7:
         sys.stdout.write("\r▓▓▓▓▓▓░░░░")
-        sys.stdout.flush()
     elif val < 0.8:
         sys.stdout.write("\r▓▓▓▓▓▓▓░░░")
-        sys.stdout.flush()
     elif val < 0.9:
         sys.stdout.write("\r▓▓▓▓▓▓▓▓░░")
-        sys.stdout.flush()
     elif val < 1:
         sys.stdout.write("\r▓▓▓▓▓▓▓▓▓░")
-        sys.stdout.flush()
     elif val == 1:
         sys.stdout.write("\r▓▓▓▓▓▓▓▓▓▓")
-        sys.stdout.flush()
-
+    sys.stdout.flush()
 remove_saved(COUNT)
